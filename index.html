@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ilvison Ricardo">
+    <meta name="description" content="Formulário na Web">
+    <link rel="icon" type="image/x-icon" href="Imagens/icone.png">
+    <link rel="stylesheet" type="text/css" href="Estilos/form.css" media="screen">
+    <title>Fórmulário</title>
+</head>
+<body>
+    <main>   
+        <section class="formulario-principal">
+            <div>
+                <img class="imagem" src="Imagens/imgprincipal.png" alt="Área de TI.">
+            </div>
+            <div>
+                <h1 id="titulo">Cadastro Profissional de TI</h1>
+                <p id="subtitulo">Complete com suas informações:</p>
+                <br>
+            </div>
+        </section>
+        <section class="formulario-principal">
+            <form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" nome="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" nome="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" nome="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Qual sua área de TI?</strong></label>
+                    <label>
+                        <input type="radio" nome="devweb" value="Infraestrutura" checked>Infraestrutura
+                    </label>
+                    <label>
+                        <input type="radio" nome="devweb" value="Desenvolvimento">Desenvolvimento
+                    </label>
+                    <label>
+                        <input type="radio" nome="devweb" value="Banco de Dados">Banco de Dados
+                    </label>
+                 
+                </div>
+                <div class="campo">
+                    <label for="senioridade"><strong>Nível</strong></label>
+                    <select id="senioridade">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Júnior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>
+                    </select>
+                </div>
+                <fieldset class="grupo">
+                    <div id="check">
+                        <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                        <input type="checkbox" id="tecnologia1" value="HTML/CSS">
+                        <label for="tecnologia1">HTML/CSS</label>
+                        <input type="checkbox" id="tecnologia2" value="Windows">
+                        <label for="tecnologia2">Windows</label>
+                        <input type="checkbox" id="tecnologia3" value="Cloud">
+                        <label for="tecnologia3">Cloud</label>
+                        <input type="checkbox" id="tecnologia4" value="Servidores">
+                        <label for="tecnologia4">Servidores</label>
+                        <input type="checkbox" id="tecnologia5" value="Oracle">
+                        <label for="tecnologia5">Oracle</label>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <br>
+                    <label><strong>Descreva sobre sua Experiência:</strong></label>
+                    <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia"></textarea>
+                </div>
+                <button class="botao" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+   </body>
+</html>
